@@ -7,42 +7,84 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 
   <script src="js/jquery-1.12.0.min.js.css"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
+  <!-- Background video from http://www.coverr.co/ -->
   <div class="homepage-hero-module">
     <div class="video-container">
         <div class="filter"></div>
-        <video autoplay loop class="fillWidth">
+        <video autoplay loop class="fillWidth" poster="video/Sunset-Lapse.jpg" id="background">
             <source src="video/Sunset-Lapse.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
             <source src="video/Sunset-Lapse.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser.
             <source src="video/Sunset-Lapse.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
-        <div class="poster hidden">
-            <img src="video/Sunset-Lapse.jpg" alt="background poster">
-        </div>
     </div>
   </div>
-  <nav>
 
-  </nav>
-  <main>
-    <section>
+  <header class="title-container text-center">
+    <div>
+      <h1>Hello! This is Zhuangzhuang(Joey) Xia</h1>
+      <h4>Front End Web Developer</h4>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <nav>
+
+    </nav>
+
+    <section class="row">
+      <div class="col-md-12 section-title">
+        <h3>My Portfolio</h3>
+        <hr>
+      </div>
+      <figure class="col-md-4 myWork">
+        <img class="img-responsive" src="portfolio/arcade-game.jpg" alt="arcade game project">
+      </figure>
+      <figure class="col-md-4 myWork">
+        <img class="img-responsive" src="portfolio/web-optimization.jpg" alt="web optimization project">
+      </figure>
+      <figure class="col-md-4 myWork">
+        <img class="img-responsive" src="portfolio/map-api.jpg" alt="map api project">
+      </figure>
+      <figure class="col-md-4 myWork">
+        <img class="img-responsive" src="portfolio/jasmine.jpg" alt="map api project">
+      </figure>
+    </section>
+
+    <section class="row">
+      <div class="col-md-12 section-title">
+        <h3>About Me</h3>
+        <hr>
+      </div>
+      <div class="col-md-8">
+        <p class="about-me-article">Previous student in University of Illinois at Urbana-Champaign. Worked as a researcher and lab manager for 1.5 year after obtained my M.S. degree in Environmental Engineering.</p>
+        <p class="about-me-article">Right now working on a career change to full stack web developer. I am open to new opportunities, contact me if you’d like to work with me.</p>
+        <div id="social">
+          <div class="col-md-4 text-center">
+            <a href="https://github.com/AsimoLoveGym" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="https://www.linkedin.com/in/zhuangzhuang-xia-45304b6b" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="mailto:xiazhuangz@gmail.com" target="_blank"><i class="fa fa-envelope-square fa-5x"></i></a>
+          </div>
+        </div>
+      </div>
+      <figure class="col-md-4">
+        <img src="img/me.jpg" alt="me" class="img-responsive">
+      </figure>
+
+
 
     </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
-
-    <footer>
-
-    </footer>
 
   </main>
 </body>

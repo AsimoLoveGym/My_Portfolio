@@ -1,9 +1,95 @@
-body {
-  margin: 0;
+html {
+  height: 100%;
 }
 
-/*Below style for backgound video only*/
-.homepage-hero-module {
+body {
+  height: 100%;
+  color: lavender;
+}
+
+/*body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}*/
+
+header {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 35%;
+}
+
+.homepage-hero-module, .video-container {
+  height: 100%;
+  width: 100%;
+}
+
+.video-container .filter {
+    z-index: -10;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: -100;
+}
+
+section, footer {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3em;
+  margin-bottom: 10em;
+}
+
+
+.myWork {
+  margin-top: 2em;
+}
+
+.about-me-article {
+  font-size: 1.5em;
+}
+
+#social {
+  margin-top: 3em;
+}
+
+
+
+/*@media screen and (min-width: 768px) {
+  header .header-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}*/
+
+/*
+
+
+
+*/
+
+/*Below style for backgound video only, from http://www.coverr.co/*/
+/*.homepage-hero-module {
     border-right: none;
     border-left: none;
     position: relative;
@@ -32,15 +118,15 @@ body {
 }
 .video-container .filter {
     z-index: 100;
-    position: absolute;
+    position: fixed;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
 }
 .video-container video {
-    position: absolute;
+    position: fixed;
     z-index: 0;
     bottom: 0;
 }
 .video-container video.fillWidth {
     width: 100%;
-}
+}*/
